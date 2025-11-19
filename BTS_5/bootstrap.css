@@ -1,0 +1,18 @@
+:root {
+  --bs-primary: #C77E1A;
+  --bs-secondary: #F4E7D3;
+  --bs-success: #88B04B;
+  --bs-info: #6EC1C2;
+  --bs-warning: #F5A623;
+  --bs-danger: #D64545;
+  --bs-light: #F8F9FA;
+  --bs-dark: #4B2E1E;
+
+  /* opzionali per body */
+  --bs-body-bg:    #ffffff;
+  --bs-body-color: #222222;
+}
+
+body {
+  background-color: #ffffff;
+}

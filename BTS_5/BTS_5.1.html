@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>I biscotti della nonna - Mini sito</title>
+
+  <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light border-bottom">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <!-- cerchio usa la variabile --bs-primary -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <circle cx="12" cy="12" r="10" fill="var(--bs-primary)"/>
+        </svg>
+        I biscotti della nonna
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#prodotti">Prodotti</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chi-siamo">Chi siamo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero: uso .text-bg-secondary -->
+  <header class="py-5 text-center text-dark text-bg-secondary">
+    <div class="container">
+      <h1 class="h2 mb-2">I biscotti della nonna</h1>
+      <p class="lead mb-3">Ricette tradizionali, ingredienti semplici e tanto amore.</p>
+      <a href="#prodotti" class="btn btn-primary btn-lg me-2">Scopri i prodotti</a>
+      <a href="#chi-siamo" class="btn btn-outline-dark btn-lg">Chi siamo</a>
+    </div>
+  </header>
+
+  <!-- Nota info con .text-bg-info -->
+  <div class="container mt-4">
+    <div class="p-3 mb-3 text-bg-info rounded">
+      <strong>Novità:</strong> ordina online e ritira in negozio. (esempio .info)
+    </div>
+  </div>
+
+  <!-- Prodotti -->
+  <section id="prodotti" class="py-4">
+    <div class="container">
+      <h2 class="h4 mb-3">I nostri biscotti</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4">
+          <div class="card">
+            <img src="https://www.fattoincasadabenedetta.it/wp-content/uploads/2022/04/biscotti_morbidi_mandorle_sito_05.jpg" class="card-img-top img-fluid" alt="Biscotti alle mandorle">
+            <div class="card-body">
+              <h5 class="card-title">Biscotti alle mandorle <span class="badge bg-danger text-light">NEW</span></h5>
+              <p class="card-text small text-muted">Croccanti e profumati, ricetta di famiglia.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold bg-warning text-dark px-2 rounded">€4,50</span>
+                <button class="btn btn-sm btn-primary">Aggiungi</button>
+              </div>
+              <!-- piccolo footer della card con bg-light -->
+              <div class="mt-2 p-2 text-bg-light small">Ingredienti: farina, burro, mandorle</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="card">
+            <img src="https://www.ricettedellanonna.net/wp-content/uploads/2013/04/biscotti-al-cacao-senza-burro-1-620x412.jpg" class="card-img-top img-fluid" alt="Biscotti al cioccolato">
+            <div class="card-body">
+              <h5 class="card-title">Biscotti al cioccolato</h5>
+              <p class="card-text small text-muted">Golosi e morbidi dentro.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold bg-secondary text-dark px-2 rounded">€5,00</span>
+                <button class="btn btn-sm btn-success">Aggiungi</button>
+              </div>
+              <!-- etichetta informativa usando .text-bg-info -->
+              <div class="mt-2 p-1 text-bg-info small">Senza conservanti</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <div class="card">
+            <img src="https://burroprealpi.it/wp-content/uploads/2019/08/Biscotti-al-limone.jpg" class="card-img-top img-fluid" alt="Biscotti al limone">
+            <div class="card-body">
+              <h5 class="card-title">Biscotti al limone</h5>
+              <p class="card-text small text-muted">Freschi e profumati.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="fw-bold bg-warning text-dark px-2 rounded">€4,80</span>
+                <button class="btn btn-sm btn-info">Aggiungi</button>
+              </div>
+              <div class="mt-2 small">
+                <span class="badge bg-success">Consigliato</span>
+                <span class="badge bg-dark text-light">Artigianale</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="chi-siamo" class="py-4 bg-white">
+    <div class="container">
+      <h2 class="h4 mb-2">Chi siamo</h2>
+      <p class="text-muted">Piccola azienda familiare che da generazioni produce biscotti artigianali con ingredienti locali. Pensiamo prima alla qualità, poi all'estetica.</p>
+    </div>
+  </section>
+
+  <!-- Sezione demo .text-bg-primary + testo light -->
+  <div class="container my-4">
+    <div class="p-3 text-bg-primary rounded">
+      <strong class="text-light">Promo:</strong> consegna gratuita per ordini sopra €20.
+    </div>
+  </div>
+
+  <!-- Contatti -->
+  <section id="contatti" class="py-4">
+    <div class="container">
+      <h2 class="h4 mb-3">Contatti</h2>
+      <form class="row g-2">
+        <div class="col-12 col-md-6">
+          <input class="form-control" type="text" placeholder="Nome" required>
+        </div>
+        <div class="col-12 col-md-6">
+          <input class="form-control" type="email" placeholder="Email" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Messaggio"></textarea>
+        </div>
+        <div class="col-12 text-end">
+          <button class="btn btn-success">Invia</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer usando .bg-dark e testo chiaro (.dark) -->
+  <footer class="mt-4 bg-dark text-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>© <strong>I biscotti della nonna</strong> 2025</div>
+      <div class="small">Palette usata: primary · success · info · warning · danger · secondary · dark · light</div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
